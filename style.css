@@ -3,7 +3,7 @@
 :root {
   --background-color: #0c0c0e;
   --btn-color: #fbe446;
-  --section-three-color: #292a31;
+  --section-two-color: #292a31;
 }
 
 * {
@@ -12,6 +12,9 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   color: #fff;
@@ -25,8 +28,12 @@ body {
   padding: 5rem 7rem 3rem 7rem;
   /* margin-bottom: 3rem; */
 }
-.left p {
+.left a {
+  cursor: pointer;
   font-family: "Prata", serif;
+}
+.left a:hover {
+  color: var(--btn-color);
 }
 .nav-list {
   justify-content: space-around;
@@ -59,9 +66,9 @@ body {
   background-color: #0c0c0e;
   border: 2px dashed #fbe446;
   border-radius: 2px;
-  color: #fff;
+  color: #fbe446;
 }
-.section-one {
+#section-one {
   background-color: var(--background-color);
   padding: 3rem 7rem 3rem 7rem;
 }
@@ -100,7 +107,7 @@ body {
   justify-content: space-between;
 }
 .project-img {
-  height: 23rem;
+  height: 23.5rem;
   margin-bottom: 1rem;
 }
 .title h1 {
@@ -123,21 +130,46 @@ body {
   line-height: 27px;
   margin-bottom: 2rem;
 }
-.section-three {
+#section-two {
+  background-color: var(--section-two-color);
+  padding: 3rem 7rem 3rem 7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.content-one {
+  margin-right: 7.3rem; 
+}
+.content-one h1 {
+  font-family: "Prata", serif;
+  font-size: 35px;
+  font-weight: 100;
+  line-height: 50px;
+  margin-bottom: .5rem;
+}
+.content-one p,
+.content-two p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 27px;
+  margin-bottom: 1.5rem;
+}
+#section-three {
   background-color: var(--background-color);
   padding: 3rem 7rem 5rem 7rem;
 }
-.section-three h1 {
+#section-three h1 {
   font-family: "Prata", serif;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 100;
 }
-.section-four {
-  background-color: var(--section-three-color);
+.footer {
+  background-color: var(--section-two-color);
   padding: 1rem 7rem 1rem 7rem;
   display: flex;
   justify-content: space-between;
 }
-.social-icons img{
+.social-icons img {
   padding: 0 0.5rem;
 }
