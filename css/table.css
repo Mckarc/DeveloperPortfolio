@@ -43,3 +43,14 @@
 .sponsor-logo {
   padding: 0.5rem 2rem;
 }
+#section-two {
+  flex-direction: column;
+}
+.content-one {
+  margin: 0;
+}
+.line-text .line-one::after,
+.line-text .line-two::after {
+  content: "\a";
+  white-space: pre;
+}
