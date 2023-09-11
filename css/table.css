@@ -1,0 +1,45 @@
+.nav-list,
+.right {
+  display: none;
+}
+.hamburger-menu {
+  display: block;
+  cursor: pointer;
+}
+.hamburger-close {
+  /* display: block;
+  position: absolute;
+  top: 30px;
+  right: 32px;
+  z-index: 22222; */
+  cursor: pointer;
+}
+.project-container {
+  flex-direction: column;
+  row-gap: 50px;
+}
+#line-one,
+#line-two {
+  font-size: 65px;
+}
+#line-three,
+#line-four,
+#line-five {
+  font-size: 17.5px;
+}
+.line-one::after,
+.line-two::after,
+.line-three::after,
+.line-four::after {
+  /* content: "\a"; */
+  /* white-space: pre; */
+  white-space: nowrap;
+}
+.sponsors {
+  display: inline-block;
+  text-align: center;
+  padding: 0 2rem;
+}
+.sponsor-logo {
+  padding: 0.5rem 2rem;
+}
